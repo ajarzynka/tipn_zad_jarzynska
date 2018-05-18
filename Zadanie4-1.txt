@@ -1,0 +1,27 @@
+1. Ile jest zmiennych w zbiorze?
+Zbiór mpg zawiera 11 zmiennych.
+
+2. Ile jest obserwacji w zbiorze?
+Obserwacji w zbiorze 234.
+
+3. Co oznacza parametr engine displacement? Co oznacza miles per gallon?
+Prametr engin displacement oznacza pojemnoœæ silnika, tu jest wyra¿ony w litrach.
+Wyra¿enie  miles per gallon oznacza d³ugoœæ przebytej drogi w milach na 1 galonie paliwa. 
+
+4. Co oznaczaj¹ poszczególne zmienne? Zrób listê zmiennych wraz z krótkim opisem, co one oznaczaj¹.
+
+Znaczenie poszczególnych zmiennych:
+manufacturer 	producent
+model		nazwa modelu samochodu
+displ		pojemnoœæ silnika
+year		data produkcji
+cyl		iloœæ cylindrów
+trans		rodzaj skrzyni biegów
+drv		napêd i jego przy³o¿enie
+	f = front-wheel drive	napêd na przednie ko³a
+	r = rear wheel drive	napêd na tylne ko³a
+	4 = 4wd			napêd na cztery ko³a
+cty 		d³ugoœæ drogi w milach pokonywana na jednym galonie paliwa w ruchu miejskim
+hwy 		d³ugoœæ drogi w milach pokonywana na jednym galonie paliwa w trasie
+fl		rodzaj paliwa
+class		klasa samochodu - kategoria podzia³u samochodów ze wzglêdu na ustalon¹ cechê (cenê, wielkoœæ itp.)
