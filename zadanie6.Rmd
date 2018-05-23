@@ -1,0 +1,92 @@
+---
+title: "Gotowanie"
+author: "Aga Jarzynka"
+date: "22 maja 2018"
+output: 
+  html_document: 
+    df_print: paged
+    theme: cerulean
+    highlight: tango
+---
+
+
+ Kuchnia studenta           ![](https://dodajprzepis.pl/wp-content/uploads/2016/12/kuchcik-200x200.jpg)
+==================
+## Czyli podpowiedzi by jeœæ tanio i zdrowo
+### ... i mieæ doœæ kasy na inne... **tra la la**
+
+
+Nie od dziœ wiadomo, ¿e cz³owiek g³odny bardzo szybko staje siê z³y. Dodaj¹c do tego stan studencki, gdzie od czasu do czasu *(przynajmniej u niektórych)* nastêpuje intensywna eksploracja szarych komórek, zapotrzebowanie energetyczne **wzrasta** i... _**WZRASTA**_...
+
+
+### Aby ta energoch³onna maszyneria dzia³a³a sprawnie po:
+1. **"CZEBA SIÊ WYSYPIAÆ"** (w sesji prawie nierealne)
+2. **Pamiêtaæ o POSI£KACH**
+- regularnych - o sta³ych porach (najlepiej co 3 godziny)
+- z du¿¹ iloœci¹ warzyw
+- minimum 2 porcjami owoców dziennie
+- ma³o przetworzone
+- z ograniczon¹ iloœci¹ t³uszczy nasyconych
+
+#### To takie najbardziej podstawowe wytyczne, o spe³nianiu których w codziennej gonitwie student nie zawsze pamiêta.
+
+
+#### Poni¿ej znajdziecie zbiorek przyk³adowych przepisów, zaczerpniêtych ze studni Internetu oraz w³asnych prac eksperymentalnych. Mam nadziejê, ¿e bêdzie przydatn¹ inspiracj¹ w tworzeniu jad³ospisu ;)
+
+## SMACZNEGO!
+
+Dla ambitniejszych w kuchni lub maj¹cych do nakarmienia wiêksz¹ grupê ludzi polecam stronê sprytnej m³odej mamy: [Kasia.in](http://kasia.in/) 
+
+---
+
+ Zupa dyniowa   
+------------------------------------------------------------------------------------------------
+Sk³adniki                                       Przygotowanie     
+----------------------------------------------- ------------------------------------------------
+ ma³a dynia                                       dyniê obierz i pokrój na kawa³ki      
+ 2 ³y¿ki mas³a                                    w garnku rozpuœæ mas³o
+ przyprawy:                                       wrzuæ dyniê i przyprawy
+sól, pieprz, czosnek granulowany,kmin rzymski,    duœ a¿ dynia siê rozpadnie
+imbir                                             dolej szklankê wody i rozdrobnij wszystko                                                       blenderem,zagotuj i podaj z ³y¿k¹ œmietany i                                                    pietruszk¹
+ natka pietruszki                                                                                
+                                                  
+Makaron z pieczonym serem camembert   
+------------------------------------------------------------------------------------------------
+Sk³adniki                                       Przygotowanie     
+----------------------------------------------- ------------------------------------------------
+250 g camemberta                                rozgrzej piekarnik do 180st C
+2 z¹bki czosku                                  w skórce sera wytnij ko³o i wyjmij je 
+ga³¹zka rozmarynu                               pokrój czosnek na cienkie paseczki i po³ó¿ na                                                   serze, posyp przyprawami
+sól, pieprz                                     przygotowane serki piecz a¿ siê rozpuszcz¹ i                                                    zabr¹zowi¹ - w tym czasie ugotuj makaron
+oliwa                                           do ugotowanego makaronu wrzuæ na 15-20 sek                                                      szpinak po czym odcedŸ, skrop oliw¹ i dopraw 
+400 g makaronu penne                            roz³ó¿ makaron na talerzach, polej go roztopionym camembertem lub po³ó¿ ser na stole tak by ka¿dy sam móg³ go sobie na³o¿yæ
+opakowanie liœci szpinaku
+
+___
+
+```{r}
+a<-c(1800:1824)
+for(s in a)
+{
+  if((s%%4==0 & s%%100!=0) | s%%400==0){print(s)}
+}
+```
+
+To prawdopodobnie `nie jest przyk³adowy kod` na wyliczenie kalorii posi³ku
+ale `ciiii` - ~_mo¿e nikt nie zauwa¿y_~
+
+___
+
+```{r include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+```
+___
+```{r}
+sto_diam <- diamonds[sample(nrow(diamonds),100),]
+ggplot(data = sto_diam) +
+  geom_point(mapping = aes(x = carat, y = price, shape = cut))
+```
+
+
